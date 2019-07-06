@@ -1,0 +1,227 @@
+#header_top{
+    width: 100%;
+    height: 60px;
+    background: #232325;
+    margin: 0 auto;
+    display: flex;
+
+    position: relative;
+    box-sizing: border-box;
+}
+#header_top .logo_first{
+    width: 200px;
+}
+/* 搜索框 */
+#header_top .sou_k{
+    width: 440px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 240px;
+    padding: 10px;
+    background: #333333;
+    border: none;
+    outline: none;
+    border-radius: 25px 0 0 25px;
+    color: #fff;
+}
+/* 占位符字体 */
+.sou_k::-webkit-input-placeholder{
+    color: #999999;
+}
+/*框内悬停效果*/
+#header_top .sou_k:hover{
+    background: #444444;
+}
+/* 搜索框按钮 */
+#header_top .sou_btn{
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+    background: #00BE06;
+    border-radius: 0 25px 25px 0;
+    position: relative;
+}
+#header_top .sou_btn:hover{
+    background: #00C809;
+}
+#header_top .sou_logo{
+    width: 30px;height: 30px;
+    margin-top: 5px;
+}
+.size_1{
+    position: absolute;
+    top: 5px;
+    color: #fff;
+    font-size: 18px;
+}
+#header_top .biao{
+    display: flex;
+    /* margin-left: 180px; */
+    margin-top: 15px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    right: 120px;
+}
+#header_top .biao>li{
+    margin-left: 30px;
+}
+#header_top .biao>li>img{
+    width: 30px;height: 30px;
+    margin-left: 20px;
+}
+/* 下拉菜单1 */
+#header_top .biao .drop1 .drop11{
+      display: none;
+      position: absolute;
+      right: 150px;
+      background-color: #fff;
+      /* min-width: 160px; */
+      width: 200px;height: 140px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      padding-top: 12px;
+      position: absolute;top: 45px;
+      border-radius: 10px;
+      margin-top: -15px;
+}
+/* 下拉菜单2 */
+#header_top .biao .drop2 .drop11{
+    display: none;
+    position: absolute;
+    left: 30px;
+    background-color: #fff;
+    width: 240px;height: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding-top: 12px;
+    position: absolute;top: 45px;
+    border-radius: 4px;
+    margin-top: -15px;
+}
+.biao .drop2 .drop11>p{
+    text-align: center;
+    color: #898989;
+}
+/* 下拉菜单3 */
+#header_top .biao .drop3 .drop11{
+    display: none;
+    position: absolute;
+    left: 160px;
+    background-color: #fff;
+    width: 200px;height: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding-top: 12px;
+    position: absolute;top: 45px;
+    border-radius: 4px;
+    margin-top: -15px;
+}
+/* 下拉菜单4 */
+#header_top .biao .drop4 .drop11{
+      display: none;
+      position: absolute;
+      left: 160px;
+      background-color: #fff;
+      width: 200px;height: 200px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      padding-top: 12px;
+      position: absolute;top: 45px;
+      border-radius: 4px;
+      margin-top: -15px;
+}
+.biao .drop4 .drop11>p{
+    color: #999999;
+    text-align: center
+}
+.biao .drop4 .drop11>a{
+    display:block;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    color: #000;
+}
+.biao .drop4 .drop11>a:hover{
+    color: #00C809;
+    background: #F5F5F5;
+}
+.biao .drop4 .drop11>div{
+    display: inline-block;
+    background: #00c809;
+    width: 60px;height: 25px;
+    margin-left: 26px;
+    border-radius: 50px;
+    margin-top: 5px;
+}
+.biao .drop4 .drop11>div>a{
+    display: block;
+    text-align:center;
+    color: #fff;
+    text-decoration: none;
+    
+}
+/* 下拉菜单正三角 */
+/* .zsj{
+    width: 0;height: 0;
+    border:20px solid transparent;
+    border-bottom:20px solid #f9f9f9;   
+} */
+#header_top .biao .drop1 .drop11>a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    margin-top: 10px;
+}
+#header_top .biao .drop1 .drop11>a:hover{
+    background: #F5F5F5;
+    color: #C8A06A;
+
+}
+#header_top .biao .drop1 .drop11>a:last-child{
+    width: 80px;
+    height: 30px;
+    background: #C8A06A;
+    color: #fff;
+    margin: 10px auto;
+    border-radius: 50px;
+    line-height: 30px;
+}
+/* 悬停菜单 */
+#header_top .biao .drop1:hover .drop11{
+    display: block;
+}
+#header_top .biao .drop2:hover .drop11{
+    display: block;
+}
+#header_top .biao .drop3:hover .drop11{
+    display: block;
+}
+#header_top .biao .drop4:hover .drop11{
+    display: block;
+}
+
+/* 导航栏 */
+.navig{
+    width: 100%;
+    height: 100px;
+    background: #212220;
+    position: relative;
+}
+.na1,.na2,.na3,.na4,.na5,.na6,.na7,.na8{
+    display: inline-block;
+    width: 300px;height: 40px;
+    /* border: 1px solid red;  */
+    line-height: 40px;
+    margin-left: 5%;
+    margin-top: 5px;
+    text-align:justify
+    
+}
+.na1>a,.na2>a,.na3>a,.na4>a,.na5>a,.na6>a,.na7>a,.na8>a{text-decoration: none!important;
+        color: #fff;
+        margin-left: 10px;
+}
+.navig .na11{
+    font:20px bold
+}
+.navig a:hover{
+    color: #DC5237
+}
